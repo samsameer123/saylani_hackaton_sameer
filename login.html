@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- basic -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- mobile metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <!-- site metas -->
+  <title>FOOD BANG</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- owl css -->
+  <link rel="stylesheet" href="../css/owl.carousel.min.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- responsive-->
+  <link rel="stylesheet" href="../css/responsive.css">
+  <!-- awesome fontfamily -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+     
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBIDtmwePIp2XrsoPwJpVpySv1G0yq-BSQ",
+      authDomain: "hakton-20a18.firebaseapp.com",
+      projectId: "hakton-20a18",
+      storageBucket: "hakton-20a18.appspot.com",
+      messagingSenderId: "889264317366",
+      appId: "1:889264317366:web:3c9ac40e13c117e2805717"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+
+</head>
+<!-- body -->
+
+<body class="main-layout">
+  <!-- loader  -->
+
+
+  <div class="wrapper">
+    <!-- end loader -->
+
+    <div class="sidebar">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+
+        <div id="dismiss">
+          <i class="fa fa-arrow-left"></i>
+        </div>
+
+        <ul class="list-unstyled components">
+
+          <li class="active">
+            <a href="dashboard.html">DASHBOARD</a>
+          </li>
+
+          <li class="active">
+            <a href="addrecipe.html">ADD DISH</a>
+          </li>
+
+
+
+
+        </ul>
+
+      </nav>
+    </div>
+
+    <div id="content">
+      <!-- header -->
+
+      <header>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="full">
+                <a class="" href="../index.html"><img src="../images/LOGO/Capture.PNG" alt="#" style="width  : 150px;" /></a>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="full">
+                <div class="right_header_info">
+                  <ul>
+
+
+
+                    <li class="button_user"><a class="button active" href="login.html">Create Account</a><a
+                        class="button" href="signin.html">Sign In</a></li>
+
+                    <li>
+                      <button type="button" id="sidebarCollapse">
+                        <img src="../images/menu_icon.png" alt="#">
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    </div>
+    <!-- footer -->
+    <fooetr>
+      <div class="footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class=" col-md-12">
+              <h2>Create Your<strong class="white"> Account </strong></h2>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+
+              <form id="form_signup" class="main_form">
+                <div class="row">
+
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <input class="form-control" placeholder="Restaurant Name" type="text">
+                  </div>
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <input class="form-control" placeholder="Email" type="text" id="email" >
+                  </div>
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <input class="form-control" placeholder="Country" type="text">
+                  </div>
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <input class="form-control" placeholder="City" type="text">
+                  </div>
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                    <input class="form-control" placeholder="Password" type="Password" id="password"></input>
+                  </div>
+                  <div style="border: black 2px solid; background-color: black; color: black;margin-left: 14px;">
+                    <button  >CREATE YOUR
+                      ACCOUNT</button>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+
+
+
+            <div class="col-md-12">
+              <div class="new">
+                <h3>Feedback</h3>
+                <form class="newtetter">
+                  <input class="tetter" placeholder="Your email" type="text" name="Your email">
+                  <button class="submit">Feedback</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <div class="container">
+
+          </div>
+        </div>
+      </div>
+    </fooetr>
+    <!-- end footer -->
+
+  </div>
+  </div>
+  
+
+  <style>
+    #owl-demo .item {
+      margin: 3px;
+    }
+
+    #owl-demo .item img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+
+
+  
+  <script src="../js/createUser.js"></script>
+</body>
+
+</html>
